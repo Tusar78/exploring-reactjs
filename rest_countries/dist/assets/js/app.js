@@ -10,12 +10,17 @@ loadCountries();
 
 // Display countries to UI
 const displayCountries = (countries) => {
-  const countryContainer = document.querySelector('.country__container');
+  const countryContainer = document.querySelector(".country__container");
   const countriesToHTML = countries.map((country) => getCountry(country));
-  countryContainer.innerHTML = countriesToHTML.join(' ');
+  countryContainer.innerHTML = countriesToHTML.join(" ");
 };
 
-const getCountry = ({flags: {png} = {}, nadme: {common} = {}, capital, population}) => {
+const getCountry = ({
+  flags: { png } = {},
+  name: { common } = {},
+  capital,
+  population,
+}) => {
   return `
     <div class="country__card max-w-xs border border-blue-200 rounded-sm shadow-md p-2">
       <img src="${png}" class="country__flag w-52 h-auto object-cover" alt="${common}">
