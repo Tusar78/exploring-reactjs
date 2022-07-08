@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--==== Attached style file ====-->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--==== Attached style file ====-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <title>Rest of the countries</title>
-</head>
-<body>
- 
-  <!--==== Attached script file ====-->
-  <script src="./assets/js/app.js"></script>
-</body>
+    <title>Rest of the countries</title>
+  </head>
+  <body>
+    <!--==== Header ====-->
+    <header class="header p-4 bg-blue-100 shadow-sm">
+      <nav class="nav max-w-4xl flex mx-auto justify-between">
+        <a href="#" class="nav__logo font-bold text-purple-500"
+          >Rest Countries</a
+        >
+
+        <div class="nav__menu">
+          <ul class="nav__list flex gap-4">
+            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Country</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--==== Main ====-->
+    <main class="main">
+      <section class="country section p-4">
+        <div class="country__container max-w-4xl mx-auto grid grid-cols-3 gap-4">
+          <!-- <div class="country__card max-w-xs border border-blue-200 rounded-sm shadow-sm p-2">
+            <img src="./assets/images/bd.png" class="country__flag w-52 h-auto object-cover" alt="">
+            <h2 class="country__title">Bangladesh</h2>
+            <span class="country__subtitle">Dhaka</span>
+            <p class="country__info">Bangladeshi Taka <span class="country__info-icon">৳</span> </p>
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <!--==== Footer ====-->
+
+    <!--==== Attached script file ====-->
+    <script src="./assets/js/app.js"></script>
+  </body>
 </html>
