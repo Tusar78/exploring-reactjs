@@ -15,11 +15,11 @@ const displayCountries = (countries) => {
   countryContainer.innerHTML = countriesToHTML.join(' ');
 };
 
-const getCountry = ({flags, name, capital, population}) => {
+const getCountry = ({flags: {png} = {}, nadme: {common} = {}, capital, population}) => {
   return `
     <div class="country__card max-w-xs border border-blue-200 rounded-sm shadow-md p-2">
-      <img src="${flags.png}" class="country__flag w-52 h-auto object-cover" alt="${name.common}">
-      <h2 class="country__title">Name: ${name.common}</h2>
+      <img src="${png}" class="country__flag w-52 h-auto object-cover" alt="${common}">
+      <h2 class="country__title">Name: ${common}</h2>
       <span class="country__subtitle">Capital: ${capital}</span>
       <p class="country__info">Population: ${population}</p>
     </div>
