@@ -23,7 +23,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <div className="container">
           <div style={card}>
-            <h2 style={{padding: '0', margin: '0'}}>Card title</h2>
+            <h2 style={{padding: '0', margin: '0'}}>{person.name}</h2>
             <span>Card subtitle</span>
             <button style={{display: 'block'}}>Click me</button>
           </div>
