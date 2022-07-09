@@ -1,36 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
 
-const person = {
-  name: 'Tusar',
-  age: 23
-}
-
-const card = {
-  width: '18rem',
-  backgroundColor: 'white',
-  boxShadow: '0px 4px 10px rgba(0,0,0,.15)',
-  borderRadius: '.25rem',
-  color: '#000',
-  textAlign: 'left',
-  padding: '1rem'
-}
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <div className="container">
-          <div style={card}>
-            <h2 style={{padding: '0', margin: '0'}}>{person.name}</h2>
-            <span>Card subtitle</span>
-            <button style={{display: 'block'}}>Click me</button>
-          </div>
-        </div>
-      </header>
+    <div className="container">
+      <div className="card__container">
+        <Person name="Tusar" rol="Professional Web developer"></Person>
+        <Person name="Rakibul Islam" rol="IT-Officer"></Person>
+        <Person name="Sharif" rol="Business man"></Person>
+      </div>
     </div>
   );
+}
+
+function Person({name, rol}) {
+  return (
+    <div className="person">
+      <img className="person__img" src={logo} alt="person-img" />
+      <h2 className="person__title">I'm {name}</h2>
+      <span className="person__role">{rol}</span>
+    </div>
+  )
 }
 
 export default App;
