@@ -6,23 +6,20 @@ function App() {
   return (
     <div className="container">
       <div className="card__container">
-        <Employee></Employee>
-        <Employee></Employee>
-        <Employee></Employee>
-        <Employee></Employee>
-        <Employee></Employee>
-        <Employee></Employee>
+        <Employee name="Tusar" role="Frontend Developer"></Employee>
+        <Employee name="Sharif" role="Businessman"></Employee>
+        <Employee name="Rakib" role="IT-Officer"></Employee>
       </div>
     </div>
   );
 }
 
 // Similar in look similar in data component
-function Employee() {
+function Employee({name, role}) {
   return (
     <div className="product">
-      <h2 className="product__name">I'm Tusar</h2>
-      <span className="product__price">Frontend Developer!</span>
+      <h2 className="product__name">I'm {name}</h2>
+      <span className="product__price">{role}</span>
     </div>
   );
 }
