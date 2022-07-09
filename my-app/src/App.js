@@ -3,12 +3,19 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
+  const employeeList = [
+    {name: 'Tusar', role: 'Frontend Developer'},
+    {name: 'Rakib', role: 'IT-Officer'},
+    {name: 'Sharif', role: 'Businessman'},
+    {name: 'Mastura', role: 'Computer Operator'},
+    {name: 'Rochita', role: 'Web Designer'}
+  ]
   return (
     <div className="container">
       <div className="card__container">
-        <Employee name="Tusar" role="Frontend Developer"></Employee>
-        <Employee name="Sharif" role="Businessman"></Employee>
-        <Employee name="Rakib" role="IT-Officer"></Employee>
+        {
+          employeeList.map(employee => <Employee key={employee.name} name={employee.name} role={employee.role}></Employee>)
+        }
       </div>
     </div>
   );
