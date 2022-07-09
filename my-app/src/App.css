@@ -19,29 +19,33 @@ body {
 
 .card__container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }
 
-.person {
+.person,
+.product {
   border: 1px solid #afffaf;
   border-radius: .4rem;
   padding: 1.5rem;
 }
 
-.person__img {
+.person__img,
+.product__img {
   display: block;
   width: 180px;
   margin: auto;
 }
 
-.person__title {
+.person__title,
+.product__name {
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-.person__role {
+.person__role,
+.product__price {
   font-size: .875rem;
   color: #646464;
   font-weight: 500;
