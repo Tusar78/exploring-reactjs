@@ -5,6 +5,9 @@ function App() {
   return (
     <>
       <Header></Header>
+      <main className="main">
+        
+      </main>
     </>
   );
 }
