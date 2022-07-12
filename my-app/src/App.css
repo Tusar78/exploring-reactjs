@@ -27,7 +27,7 @@ body {
 .person,
 .product {
   border: 1px solid #afffaf;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   padding: 1.5rem;
 }
 
@@ -46,19 +46,46 @@ body {
 
 .person__role,
 .product__price {
-  font-size: .875rem;
+  font-size: 0.875rem;
   color: #646464;
   font-weight: 500;
 }
 
 .btn {
-  padding: .625rem 1.5rem;
+  padding: 0.625rem 1.5rem;
   font-family: Fira Code;
   font-size: 1rem;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   border: 1px solid #ddd;
   cursor: pointer;
   margin-top: 1rem;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
+/* Header Design */
+.header {
+  width: 100%;
+  box-shadow: 0 1px 6px rgb(90 90 90 / 12%);
+}
+
+.nav__logo {
+  font-size: 1.5rem;
+  color: hsl(125deg 46% 66%);
+}
+
+.nav {
+  max-width: 960px;
+  margin: 0 auto;
+  height: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}

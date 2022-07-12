@@ -16,7 +16,7 @@ const Countries = () => {
     <section className="container">
       <div className="card__container">
         {
-          countries.map(country => <Country key={country.name.common} name={country.name.common} population={country.population}></Country>)
+          countries.map(country => <Country key={country.name.common} country={country}></Country>)
         }
       </div>
     </section>
