@@ -62,31 +62,3 @@ body {
   margin-right: .5rem;
 }
 
-/* Header Design */
-.header {
-  width: 100%;
-  box-shadow: 0 1px 6px rgb(90 90 90 / 12%);
-}
-
-.nav__logo {
-  font-size: 1.5rem;
-  color: hsl(125deg 46% 66%);
-}
-
-.nav {
-  max-width: 960px;
-  margin: 0 auto;
-  height: 4rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav__list {
-  display: flex;
-  list-style: none;
-  gap: 1.5rem;
-}
-
