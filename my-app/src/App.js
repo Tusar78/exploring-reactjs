@@ -1,4 +1,5 @@
 import "./App.css";
+import Countries from "./Components/Countries/Countries";
 import Header from "./Components/Header/Header";
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
     <>
       <Header></Header>
       <main className="main">
-        
+        <Countries></Countries>
       </main>
     </>
   );
