@@ -1,6 +1,7 @@
 import "./App.css";
 import Blog from "./Components/Blog/Blog";
 import Header from "./Components/Header/Header";
+import Mobile from "./Components/Mobile/Mobile";
 
 function App() {
   const headings = [
@@ -18,6 +19,8 @@ function App() {
               return <Blog key={heading.id} heading={heading.title} author={heading.author}></Blog>
             })
           }
+
+          <Mobile></Mobile>
         </section>
       </main>
     </>
