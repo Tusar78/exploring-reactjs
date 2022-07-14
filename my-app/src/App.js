@@ -7,10 +7,17 @@ function App() {
     <>
       <Header></Header>
       <main className="main">
+        <MyComponent.DatePicker color="blue"/>
         <Countries></Countries>
       </main>
     </>
   );
+}
+
+const MyComponent = {
+  DatePicker: function DatePicker(props) {
+    return <div>Imagine a {props.color} color here!</div>
+  }
 }
 
 export default App;
