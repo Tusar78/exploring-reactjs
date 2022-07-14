@@ -2,6 +2,7 @@ import "./App.css";
 import Blog from "./Components/Blog/Blog";
 import Header from "./Components/Header/Header";
 import Mobile from "./Components/Mobile/Mobile";
+import Todo from "./Components/Todo/Todo";
 
 function App() {
   const headings = [
@@ -21,6 +22,7 @@ function App() {
           }
 
           <Mobile></Mobile>
+          <Todo></Todo>
         </section>
       </main>
     </>
