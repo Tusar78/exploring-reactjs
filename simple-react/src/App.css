@@ -38,3 +38,8 @@ body {
   margin-left: .5rem;
   cursor: pointer;
 }
+
+.button:active {
+  background-color: mediumpurple;
+  color: #fff;
+}

@@ -4,7 +4,7 @@ import Cosmetic from '../Cosmetic/Cosmetic';
 const Cosmetics = () => {
   const [cosmetics, setCosmetics] = useState([]);
   useEffect(() => {
-    fetch('https://cosmetics.free.beeceptor.com')
+    fetch('data.json')
       .then(res => res.json())
       .then(data => setCosmetics(data));
   }, []) 

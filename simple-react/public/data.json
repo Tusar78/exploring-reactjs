@@ -1,0 +1,44 @@
+[
+  {
+    "id": "62e40d819502bfd28789e583",
+    "balance": "$2,245.70",
+    "age": 29,
+    "name": "Fay Harding",
+    "gender": "female"
+  },
+  {
+    "id": "62e40d8129929a3e8357d139",
+    "balance": "$3,753.69",
+    "age": 26,
+    "name": "Stella Atkins",
+    "gender": "female"
+  },
+  {
+    "id": "62e40d81c75dd63e6e95ad73",
+    "balance": "$3,068.12",
+    "age": 28,
+    "name": "Marjorie Nolan",
+    "gender": "female"
+  },
+  {
+    "id": "62e40d815f2c61ceb778ab0c",
+    "balance": "$3,641.70",
+    "age": 21,
+    "name": "Lolita Beasley",
+    "gender": "female"
+  },
+  {
+    "id": "62e40d817544aa5d2bfb9eb5",
+    "balance": "$2,202.32",
+    "age": 36,
+    "name": "Rosario House",
+    "gender": "male"
+  },
+  {
+    "id": "62e40d816ea24f4cceae3711",
+    "balance": "$3,177.22",
+    "age": 28,
+    "name": "Espinoza Malone",
+    "gender": "male"
+  }
+]
