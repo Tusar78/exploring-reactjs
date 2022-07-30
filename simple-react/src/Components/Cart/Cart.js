@@ -10,14 +10,11 @@ const Cart = ({ cart }) => {
     return prev + curr.shipping;
   }, 0);
 
-  const tax = cart.reduce((prev, curr) => {
-    const newTax = ((curr.price * 3) / 100).toFixed(2);
-    const numTax = parseFloat(newTax);
-    console.log(numTax);
-    return prev + numTax;
-  }, 0);
+  // 3 percentage tax
+  const newTax = ((price + shipping) * .03).toFixed(2);
+  const numTax = parseFloat(newTax);
 
-  const grandTotal = price + shipping + tax; 
+  const grandTotal = price + shipping + numTax; 
 
   return (
     <div className="cart">
@@ -26,7 +23,7 @@ const Cart = ({ cart }) => {
         <p>Selected item: {cart.length}</p>
         <p>Total price: ${price}</p>
         <p>Total shipping Charge: ${shipping}</p>
-        <p>Tax: ${tax}</p>
+        <p>Tax: ${numTax}</p>
         <h5 className="cart__total">Grand Total: ${grandTotal}</h5>
       </div>
       <div className="cart__buttons">
