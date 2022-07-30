@@ -2,13 +2,21 @@ import React from "react";
 import "./Cart.css";
 
 const Cart = ({ cart }) => {
+  const quantity = cart.reduce((prev, curr) => {
+    return prev + curr.quantity
+  }, 0)
+
   const price = cart.reduce((prev, curr) => {
+    if (curr.quantity) {
+      return prev + curr.price * curr.quantity;
+    }
     return prev + curr.price;
   }, 0);
 
   const shipping = cart.reduce((prev, curr) => {
     return prev + curr.shipping;
   }, 0);
+
 
   // 3 percentage tax
   const newTax = ((price + shipping) * .03).toFixed(2);
@@ -20,7 +28,7 @@ const Cart = ({ cart }) => {
     <div className="cart">
       <h4 className="cart__title">Order Summery</h4>
       <div className="cart__info">
-        <p>Selected item: {cart.length}</p>
+        <p>Selected item: {quantity}</p>
         <p>Total price: ${price}</p>
         <p>Total shipping Charge: ${shipping}</p>
         <p>Tax: ${numTax}</p>
