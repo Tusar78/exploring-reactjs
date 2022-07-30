@@ -1,0 +1,57 @@
+.cart__title {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #1C2B35;
+  font-weight: 400;
+}
+
+.cart__info {
+  margin-top: 3rem;
+}
+
+.cart__info p {
+  font-size: 1rem;
+  color: #2A414F;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.cart__total {
+  font-size: 1.25rem;
+  color: #0E161A;
+  font-weight: 400; 
+}
+
+.cart__buttons {
+  margin-top: 3.5rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.cart__btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .875rem 1.5rem;
+  font-family: 1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+
+.cart__btn--red {
+  background-color: #FF3030;
+  color: #fff;
+}
+
+.cart__btn--yellow {
+  background-color: #FF9900;
+  color: #fff;
+}
+
+.cart__btn-icon {
+  padding-left: .25rem;
+  font-size: 1.2rem;
+}

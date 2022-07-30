@@ -10,15 +10,15 @@ const Cart = () => {
         <p>Total price: </p>
         <p>Total shipping Charge: </p>
         <p>Tax: </p>
-        <h5 className="cart__total">Grand total: </h5>
+        <h5 className="cart__total">Grand Total: </h5>
       </div>
       <div className="cart__buttons">
         <button className="cart__btn cart__btn--red">
-          Clear Cart
+          <span>Clear Cart</span>
           <i className="uil uil-trash cart__btn-icon"></i>
         </button>
         <button className="cart__btn cart__btn--yellow">
-          Clear Cart
+        <span>Review Order</span>
           <i className="uil uil-arrow-right cart__btn-icon"></i>
         </button>
       </div>
