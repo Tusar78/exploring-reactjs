@@ -1,4 +1,5 @@
 import React from 'react';
+import './Product.css'
 
 const Product = ({product}) => {
   const {img, name, price, seller, rating} = product;
@@ -12,6 +13,11 @@ const Product = ({product}) => {
         <small className="product__seller">Manufacturer: {seller}</small>
         <small className="product__rating">Rating: {rating} star</small>
       </div>
+
+      <button className="product__btn">
+        Add to cart
+        <i class="uil uil-shopping-cart"></i>  
+      </button>
     </div>
   );
 };
