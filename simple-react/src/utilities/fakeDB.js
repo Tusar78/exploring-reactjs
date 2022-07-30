@@ -27,4 +27,8 @@ const deleteToCart = (id) => {
   }
 };
 
-export { addToCart, deleteToCart };
+export {
+  addToCart,
+  deleteToCart
+};
+
