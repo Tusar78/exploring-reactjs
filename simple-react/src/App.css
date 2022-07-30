@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-  font-family: Fira Code, monospace;
+  font-family: 'Lato', sans-serif;
   font-size: 1rem;
   color: #100f1b;
 }
@@ -49,4 +51,8 @@ body {
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+a {
+  text-decoration: none;
 }
