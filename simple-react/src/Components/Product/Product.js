@@ -1,5 +1,5 @@
 import React from 'react';
-import './Product.css'
+import './Product.css';
 
 const Product = ({product}) => {
   const {img, name, price, seller, rating} = product;
@@ -15,8 +15,8 @@ const Product = ({product}) => {
       </div>
 
       <button className="product__btn">
-        Add to cart
-        <i class="uil uil-shopping-cart"></i>  
+        Add to Cart
+        <i class="uil uil-shopping-cart product__btn-icon"></i>  
       </button>
     </div>
   );
