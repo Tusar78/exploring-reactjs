@@ -16,13 +16,16 @@ const Shop = () => {
   const handleAddToCart = (product) => {
     const newCart = [...cart, product];
     setCart(newCart);
-    addToCart(product.id)
+    addToCart(product.id);
   };
 
   useEffect(() => {
     const storedCart = getStoredCart();
-    console.log(storedCart);
-  }, [])
+    for (const id in storedCart) {
+      const addedProduct = products.find((product) => product.id === id);
+      console.log(addedProduct);
+    }
+  }, [products]);
 
   return (
     <>
@@ -37,7 +40,7 @@ const Shop = () => {
           ))}
         </div>
         <div className="cart-container">
-         <Cart cart={cart} />
+          <Cart cart={cart} />
         </div>
       </section>
     </>
