@@ -29,3 +29,6 @@ const {
   address: { country, capital },
 } = personObject;
 console.log(country, capital, myName);
+
+const { age = 'Not available' } = personObject;
+console.log(age);
