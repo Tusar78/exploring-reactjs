@@ -9,11 +9,15 @@ const Products = () => {
       .then(data => setGuns(data))
   }, [])
 
+  const handleClick = card => {
+    console.log(card);
+  }
+
   return (
     <section className='product__container container'>
       {
         guns.map(gun => {
-          return <Product key={gun.id} data={gun} />
+          return <Product key={gun.id} data={gun} handleClick={handleClick} />
         })
       }
       
