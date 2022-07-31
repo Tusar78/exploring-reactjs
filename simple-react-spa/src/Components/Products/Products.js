@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Product from '../Product/Product';
 
 const Products = () => {
   const [guns, setGuns] = useState([]);
@@ -7,9 +8,14 @@ const Products = () => {
       .then(res => res.json())
       .then(data => setGuns(data))
   }, [])
-  
+
   return (
-    <section className='product__container'>
+    <section className='product__container container'>
+      {
+        guns.map(gun => {
+          return <Product key={gun.id} data={gun} />
+        })
+      }
       
     </section>
   );
